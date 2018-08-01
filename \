@@ -1,0 +1,11 @@
+
+
+- ec2:
+    key_name: ansible
+    instance_type: t2.micro
+    image: ami-d783a9b8
+    wait: yes
+    group: sg-2ff73a44
+    count: 3
+    vpc_subnet_id: subnet-ee7c9a87
+    assign_public_ip: yes

@@ -1,0 +1,12 @@
+---
+- hosts: test
+  become: true
+  become_user: root
+  tasks:
+  - name: ensure a list of packages installed
+    yum:
+      name: "{{ pack }}"
+    vars: 
+     pack:
+     - httpd
+     - httpd-tools

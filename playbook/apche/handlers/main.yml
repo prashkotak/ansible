@@ -1,0 +1,5 @@
+---
+# handlers file for playbook/apche
+#
+- name: restart apache
+  service: name=httpd state=restarted

@@ -1,0 +1,16 @@
+---
+# group_vars/all.yml
+#  
+#  image: ami-7243e611
+#  subnet: subnet-417fff25
+#  region: ap-southeast-1
+#  zone: ap-southeast-1a # zone that the master AMI will be configured in
+#  keypair: mykey
+#  security_groups: sample_subnet
+#  instance_type: t2.micro
+#
+#  volumes:
+#    - device_name: /dev/xvda
+#        device_type: gp2
+#            volume_size: 8 # size of the root disk
+#                delete_on_termination: true

@@ -1,0 +1,12 @@
+---
+- hosts: test
+  become: true
+  become_user: root
+  tasks:
+   - name: Copy a file
+     copy:
+      src: /tmp/xxx
+      dest: /tmp/xxx1
+      owner: centos
+      group: centos
+      mode: 0777

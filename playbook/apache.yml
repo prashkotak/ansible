@@ -1,0 +1,6 @@
+---
+- hosts: test
+  become: root
+  become_user: root
+  roles:
+  - apche 

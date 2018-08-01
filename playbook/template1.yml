@@ -1,0 +1,10 @@
+---
+- hosts: test
+  become: true
+  become_user: root
+  tasks:
+   - name: Check the service status
+     service:
+       name: vsftpd
+       state: started
+
